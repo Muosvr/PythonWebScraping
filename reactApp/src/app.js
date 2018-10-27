@@ -7,7 +7,7 @@ var template = (
   <div>
     <h1>{app.title}</h1>
     <p>{app.subtitle}</p>
-    <p>Locations: Providence, RI</p>
+    <p>This is great a location: Providence, RI</p>
   </div>
 );
 

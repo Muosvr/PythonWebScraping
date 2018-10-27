@@ -21,7 +21,7 @@ var template = React.createElement(
   React.createElement(
     'p',
     null,
-    'Locations: Providence, RI'
+    'This is great a location: Providence, RI'
   )
 );
 

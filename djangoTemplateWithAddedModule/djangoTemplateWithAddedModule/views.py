@@ -1,10 +1,12 @@
-# Using this tutorial: 
+# Using this tutorial:
 # https://realpython.com/python-web-scraping-practical-introduction/
 
 from django.http import HttpResponse
 from django.shortcuts import render
 from utils.scraper import *
 from utils.parse_scraped import *
+
+from json import dumps
 
 
 def home(request):
@@ -19,13 +21,5 @@ def about(request):
 
     return render(
         request, 'about.html',
-        {'lenUrl': len(raw_html), 'rawHtml': raw_html, 'urlParsed': url_parsed}
+        {'urlParsed': dumps(url_parsed)}
     )
-
-
-
-
-
-
-
-
